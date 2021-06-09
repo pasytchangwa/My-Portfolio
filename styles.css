@@ -22,7 +22,7 @@ a {
 }
 
 .wrapper {
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   background-color: #e5e5e5;
 }
@@ -36,15 +36,17 @@ a {
   justify-content: space-between;
   padding-right: 35px;
   padding-left: 24px;
-  padding-bottom: 30px;
   width: 100%;
-  height: 80px;
+  height: 92px;
   align-items: center;
   background-color: #fff;
 }
 
 .logo {
-  margin-top: 58px;
+  display: flex;
+  align-items: center;
+  width: 76px;
+  height: 20px;
 }
 
 /* nav */
@@ -53,28 +55,21 @@ a {
   font-weight: lighter;
   color: #6070ff;
   border: none;
-  margin-top: 62px;
   background-color: transparent;
-  width: 18px;
-  height: 12px;
 }
 
 /* End of Header */
 
 /* Headline-Section */
 
-main {
-  margin-top: -30px;
-}
-
 .headline {
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
   width: 100%;
-  height: 690px;
-  background: url(./image/images-main/mobile.png);
+  min-height: 690px;
+  background: url("./image/images-main/mobile.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -85,15 +80,13 @@ main {
 }
 
 .headline-title {
-  margin-top: 8px;
+  margin-top: 114px;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
-  margin-bottom: 6px;
   height: 150px;
   width: 327px;
-  padding-top: 120px;
 }
 
 .headline-info {
@@ -101,7 +94,8 @@ main {
   line-height: 24px;
   color: #344563;
   font-weight: 400;
-  margin-top: 140px;
+  margin-top: 12px;
+  height: 140px;
 }
 
 .media-info {
@@ -110,12 +104,13 @@ main {
   font-style: normal;
   color: #7f8cff;
   font-weight: 500;
-  margin-top: 20px;
+  margin-top: 12px;
+  height: 24px;
 }
 
 .headline .social-icons {
   display: flex;
-  margin-top: 20px;
+  margin-top: 12px;
   align-items: center;
 }
 
