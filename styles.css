@@ -197,6 +197,12 @@ a {
   line-height: 16px;
 }
 
+.language-list-ctn a img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 9px;
+}
+
 .card-section .info li img {
   width: 8px;
   height: 8px;
@@ -218,7 +224,7 @@ a {
   align-self: flex-start;
 }
 
-.program-btns li {
+.btn-ctn {
   margin-right: 8px;
 }
 
@@ -327,7 +333,7 @@ a {
   padding-left: 20px;
 }
 
-.about-head .social-icons li {
+.social-icon-ctn {
   margin-right: 20px;
 }
 
@@ -354,7 +360,7 @@ a {
   margin-bottom: 30px;
 }
 
-.language-js {
+.language-list-ctn {
   display: flex;
   align-items: center;
   width: 315px;
@@ -365,7 +371,7 @@ a {
   padding-left: 12px;
 }
 
-.language-js a {
+.language-link {
   margin-left: 16px;
   margin-top: 21px;
   margin-bottom: 21px;
@@ -378,12 +384,6 @@ a {
   height: 24px;
 }
 
-.language-js a img {
-  width: 48px;
-  height: 48px;
-  margin-bottom: 9px;
-}
-
 .separator {
   height: 1px;
   color: #dfe1e6;
@@ -392,5 +392,5 @@ a {
 
 .skill-skills .skill-title {
   margin-top: 24px;
-  margin-bottom: 24px;
+  padding-top: 10px;
 }
