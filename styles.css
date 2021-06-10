@@ -161,18 +161,12 @@ a {
 }
 
 .card-section .info li {
-  font-size: 12px;
   text-transform: capitalize;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
   margin-right: 10px;
   color: #7a869a;
-}
-
-.card-section .info li:first-child {
-  text-transform: uppercase;
-  color: #344563;
 }
 
 .section-info {
@@ -303,4 +297,65 @@ a {
 
 .about-head .btn4 {
   align-self: flex-start;
+}
+
+.skills {
+  margin-left: 24px;
+}
+
+.skill-title {
+  display: flex;
+  justify-content: space-between;
+  width: 327px;
+  padding-right: 26px;
+}
+
+.skill-title .span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #000;
+}
+
+.skill-title .span:last-child {
+  padding-right: 70px;
+}
+
+.language-list {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.language-js {
+  display: flex;
+  align-items: center;
+  width: 303px;
+  height: 66px;
+  border-radius: 8px;
+  background-color: #f7f7f9;
+  margin-bottom: 10px;
+  padding-left: 12px;
+}
+
+.language-js a {
+  text-decoration: none;
+  margin-left: 10px;
+  color: #253858;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+  vertical-align: top;
+  width: 215px;
+  height: 24px;
+}
+
+.separator {
+  height: 1px;
+  color: #dfe1e6;
+  width: 327px;
+}
+
+.skill-skills .skill-title {
+  padding-top: 23px;
+  padding-bottom: 10px;
 }
