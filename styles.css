@@ -137,24 +137,32 @@ a {
   margin-top: 2rem;
   padding-top: 50px;
   width: 100%;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 114px;
+}
+
+.section-img img {
+  width: 355px;
 }
 
 .card {
-  border: 1px solid rgb(194, 191, 191);
-  border-radius: 1rem;
-  width: 90%;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
   background-color: white;
-  padding-top: 15px;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .card .title {
   align-self: flex-start;
-  margin-left: 20px;
-  padding-top: 10px;
+  height: 36px;
+  color: #172b4d;
+  padding-top: 12px;
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
@@ -162,10 +170,9 @@ a {
 }
 
 .card-section .info {
-  margin-top: 10px;
+  padding-top: 20px;
   display: flex;
-  width: 90%;
-  align-items: center;
+  width: 100%;
 }
 
 .card-section .info li {
@@ -174,27 +181,45 @@ a {
   font-size: 13px;
   line-height: 16px;
   margin-right: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  height: 32px;
   color: #7a869a;
+  display: flex;
+  align-items: center;
+}
+
+.card-section .info li:first-child {
+  text-transform: uppercase;
+  color: #344563;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.card-section .info li img {
+  width: 8px;
+  height: 8px;
+  color: #c1c7d0;
 }
 
 .section-info {
   font-size: 15px;
-  margin-top: 1rem;
-  width: 90%;
   color: #344563;
   font-weight: 400;
   line-height: 24px;
+  margin-top: 12px;
 }
 
 .program-btns {
-  width: 100%;
   display: flex;
-  padding-left: 20px;
-  margin-top: 10px;
+  justify-content: flex-start;
+  margin-top: 12px;
+  align-self: flex-start;
 }
 
 .program-btns li {
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 .btn-html {
@@ -204,9 +229,8 @@ a {
   border: none;
   border-radius: 5px;
   color: #6070ff;
-  display: flex;
-  align-content: center;
-  justify-content: center;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .btn-css {
@@ -216,9 +240,8 @@ a {
   border: none;
   border-radius: 5px;
   color: #6070ff;
-  display: flex;
-  align-content: center;
-  justify-content: center;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .btn-js {
@@ -228,21 +251,23 @@ a {
   border: none;
   border-radius: 5px;
   color: #6070ff;
-  display: flex;
-  align-content: center;
-  justify-content: center;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .btn4 {
-  padding: 8px;
-  margin-top: 20px;
-  border-radius: 0.4rem;
-  margin-bottom: 25px;
-  align-self: flex-start;
-  margin-left: 23px;
+  padding: 12px;
+  margin-top: 24px;
+  border-radius: 8px;
+  margin-bottom: 28px;
   background-color: white;
-  color: blue;
+  color: #6070ff;
   border: 1px solid #396df2;
+  text-align: center;
+  align-self: flex-start;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 500;
 }
 
 /* End of Card section */
@@ -251,13 +276,20 @@ a {
 
 .about-section {
   display: flex;
-  margin-top: 114px;
+  margin-top: 94px;
+  padding-top: 100px;
   flex-direction: column;
-  padding-left: 28px;
+  padding-left: 24px;
+  padding-right: 24px;
   width: 100%;
   height: auto;
   background-color: #fff;
   border-top-right-radius: 60px;
+}
+
+.about-head {
+  display: flex;
+  flex-direction: column;
 }
 
 .about-title {
@@ -267,7 +299,6 @@ a {
   color: #172b4d;
   height: 101px;
   width: 327px;
-  margin-top: 114px;
 }
 
 .about-info {
@@ -280,31 +311,24 @@ a {
   font-weight: 400;
 }
 
-.about-head {
-  display: flex;
-  flex-direction: column;
-}
-
 .about-head .media-info {
   margin-top: 12px;
   font-size: 16px;
   line-height: 24px;
   vertical-align: top;
   height: 24px;
+  font-weight: 500;
+  color: #7f8cff;
 }
 
 .about-section .social-icons {
   display: flex;
-  margin-top: 25px;
-  align-items: center;
+  margin-top: 24px;
+  padding-left: 20px;
 }
 
 .about-head .social-icons li {
   margin-right: 20px;
-}
-
-.about-head .btn4 {
-  align-self: flex-start;
 }
 
 .skills {
@@ -325,19 +349,15 @@ a {
   color: #000;
 }
 
-.skill-title .span:last-child {
-  padding-right: 70px;
-}
-
 .language-list {
-  margin-top: 30px;
+  margin-top: 40px;
   margin-bottom: 30px;
 }
 
 .language-js {
   display: flex;
   align-items: center;
-  width: 303px;
+  width: 315px;
   height: 66px;
   border-radius: 8px;
   background-color: #f7f7f9;
@@ -346,8 +366,9 @@ a {
 }
 
 .language-js a {
-  text-decoration: none;
-  margin-left: 10px;
+  margin-left: 16px;
+  margin-top: 21px;
+  margin-bottom: 21px;
   color: #253858;
   font-size: 15px;
   line-height: 20px;
@@ -357,6 +378,12 @@ a {
   height: 24px;
 }
 
+.language-js a img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 9px;
+}
+
 .separator {
   height: 1px;
   color: #dfe1e6;
@@ -364,6 +391,6 @@ a {
 }
 
 .skill-skills .skill-title {
-  padding-top: 23px;
-  padding-bottom: 10px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
