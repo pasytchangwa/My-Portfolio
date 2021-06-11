@@ -26,7 +26,7 @@ Additional description about the project and its features.
 👤 **Author1**
 
 - Sylvestre: [@pasytchangwa](https://github.com/pasytchangwa)
-- Microverse: [@microversenic](https://https://github.com/microverseinc)
+- Microverse: [@microversenic](https://github.com/microverseinc)
 
 ## 🤝 Contributing
 
