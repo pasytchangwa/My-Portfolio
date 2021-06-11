@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* General Rules */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #e5e5e5;
+}
+
+/* End of General Rules */
+
+/* Header */
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 92px;
+  align-items: center;
+  background-color: #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  margin-left: 12px;
+  color: #6070ff;
+}
+
+/* nav */
+
+.nav-btn {
+  font-weight: lighter;
+  color: #6070ff;
+  border: none;
+  background-color: transparent;
+  margin-right: 24px;
+}
+
+/* End of Header */
+
+/* Headline-Section */
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 136px;
+  width: 100%;
+  min-height: 690px;
+  background: url("./image/images-main/mobile.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  object-fit: cover;
+  background-color: #fff;
+  border-bottom-left-radius: 80px;
+}
+
+.headline-title {
+  margin-top: 114px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  height: 150px;
+  width: 327px;
+}
+
+.headline-info {
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  font-weight: 400;
+  margin-top: 12px;
+  height: 146px;
+}
+
+.media-info {
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  color: #7f8cff;
+  font-weight: 500;
+  margin-top: 12px;
+  height: 24px;
+}
+
+.headline .social-icons {
+  display: flex;
+  margin-top: 12px;
+  align-items: center;
+  list-style-type: none;
+}
+
+.headline .social-icons li {
+  margin-right: 20px;
+}
+
+.headline .social-icons li a {
+  text-decoration: none;
+  color: #50505f79;
+}
+
+/* End of Headline-Section */
