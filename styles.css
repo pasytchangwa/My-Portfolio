@@ -384,13 +384,22 @@ a {
   height: 24px;
 }
 
-.separator {
+.skill-skills .separator {
   height: 1px;
   color: #dfe1e6;
-  width: 327px;
+}
+
+.skill-frameworks {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-skills {
+  display: flex;
+  flex-direction: column;
 }
 
 .skill-skills .skill-title {
-  margin-top: 24px;
-  padding-top: 10px;
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
