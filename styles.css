@@ -217,18 +217,26 @@ a {
   margin-top: 12px;
 }
 
-.program-btns {
+/* .program-btns {
   display: flex;
   justify-content: flex-start;
   margin-top: 12px;
   align-self: flex-start;
-}
+} */
 
-.btn-ctn {
+/* .btn-ctn {
   margin-right: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
+} */
+
+
+.btn-ctn {
+  float: left;
+  margin-right: 10px;
+  text-align: center;
+  padding-top: 3px;
 }
 
 .btn-html {
