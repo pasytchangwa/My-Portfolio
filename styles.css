@@ -291,7 +291,7 @@ a {
   padding-left: 24px;
   padding-right: 24px;
   width: 100%;
-  height: auto;
+  height: 1263px;
   background-color: #fff;
   border-top-right-radius: 60px;
 }
@@ -405,4 +405,163 @@ a {
 .skill-skills .skill-title {
   margin-bottom: 10px;
   margin-top: 20px;
+}
+
+.footer-section {
+  margin: 0;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #6070ff;
+  background-image: url(/image/images-main/contact-bcg.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-x: 153px;
+  background-position-y: 21px;
+  height: 779px;
+  margin-top: -160px;
+  padding-top: 103px;
+  border-top-left-radius: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-header {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  height: 56px;
+  text-align: center;
+  margin-bottom: 12px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-info {
+  height: 102px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  text-align: center;
+  color: #ebebff;
+  margin-bottom: 63px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-form {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-form ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.first {
+  margin-bottom: 20px;
+  height: 48px;
+}
+
+.second {
+  margin-bottom: 18px;
+  height: 48px;
+}
+
+.third {
+  margin-bottom: 22px;
+  height: 170px;
+}
+
+.footer-form ul li input {
+  padding: 15px 38px 15px 16px;
+  border-radius: 8px;
+  width: 100%;
+  background-color: #fff;
+  border: none;
+}
+
+.footer-form textarea {
+  width: 100%;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 15px 38px 15px 16px;
+}
+
+.footer-form ul li input[value="Yeremias"] {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #172b4d;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-form ul li input[value="natajayanj14@gmail.com"] {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #172b4d;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-form textarea::placeholder {
+  color: #b3bac5;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.footer-form .btn5 {
+  padding: 12px 16px 12px 16px;
+  height: 48px;
+  width: 140px;
+  color: #6070ff;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 32px;
+  text-transform: capitalize;
+  margin-top: 22px;
+}
+
+.btn5:hover {
+  background-color: #6070ff;
+  border-radius: 16px;
+  color: #fff;
+}
+
+.footer-line {
+  height: 5px;
+  width: 134px;
+  background-color: #0d151e;
+  margin-left: 120px;
+  margin-right: 121px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.btn4:disabled {
+  background-color: #e5e5e5;
+}
+
+.btn4:active {
+  background-color: #2230d2;
+}
+
+.btn4:hover {
+  background-color: #6070ff;
+  border-radius: 16px;
+  color: #fff;
+}
+
+.btn4:enabled {
+  border: 1px solid #7fbcff;
+  background-color: #fff;
+  color: #7f8cff;
 }
