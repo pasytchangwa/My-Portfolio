@@ -421,6 +421,10 @@ a {
   margin-top: -160px;
   padding-top: 103px;
   border-top-left-radius: 60px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
 }
 
 .footer-header {
@@ -513,7 +517,7 @@ a {
   font-weight: 400;
 }
 
-.footer-form .btn4 {
+.footer-form .btn5 {
   padding: 12px 16px 12px 16px;
   height: 48px;
   width: 140px;
@@ -525,7 +529,7 @@ a {
   border: none;
   border-radius: 8px;
   margin-bottom: 32px;
-  display: block;
+  /* display: block; */
   text-transform: capitalize;
 }
 
