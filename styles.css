@@ -423,8 +423,6 @@ a {
   border-top-left-radius: 60px;
   display: flex;
   flex-direction: column;
-  /* justify-content: center;
-  align-items: center; */
 }
 
 .footer-header {
@@ -530,6 +528,13 @@ a {
   margin-bottom: 32px;
   /* display: block; */
   text-transform: capitalize;
+  margin-top: 22px;
+}
+
+.btn5:hover {
+  background-color: #6070ff;
+  border-radius: 16px;
+  color: #fff;
 }
 
 .footer-line {
