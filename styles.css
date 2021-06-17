@@ -76,7 +76,7 @@ header {
   height: 40px;
 }
 
-.nav-btn > img {
+.nav-btn>img {
   width: 18px;
   height: 12px;
   color: #6070ff;
@@ -158,7 +158,7 @@ header {
   border-radius: 8px;
 }
 
-.section-img > img {
+.section-img>img {
   box-sizing: border-box;
 }
 
@@ -244,7 +244,7 @@ header {
 
 .hand-cursor {
   display: none;
-    
+
 }
 
 .card .info li:nth-child(1n) {
@@ -268,6 +268,7 @@ header {
 .card:nth-child(4n) .facebook {
   display: none;
 }
+
 .card:nth-child(1n) .fullstack {
   display: none;
 }
@@ -694,7 +695,7 @@ header {
     line-height: 20px;
   }
 
-  .nav-links > li a {
+  .nav-links>li a {
     margin: 0px;
     padding: 10px 12px;
     margin-left: 8px;
@@ -761,7 +762,7 @@ header {
     padding-bottom: 1px;
   }
 
-  .section-img > img {
+  .section-img>img {
     width: 100%;
     height: 90%;
   }
@@ -786,9 +787,10 @@ header {
     order: 0;
   }
 
-  .card:nth-child(2n) > .section-img {
+  .card:nth-child(2n)>.section-img {
     order: 2;
   }
+
   .card:nth-child(3n) {
     order: -3;
   }
@@ -797,7 +799,7 @@ header {
     order: -2;
   }
 
-  .card:nth-child(4n) > .section-img {
+  .card:nth-child(4n)>.section-img {
     order: 2;
   }
 
@@ -921,6 +923,7 @@ header {
     padding-bottom: 8px;
     padding-left: 0px;
   }
+
   .card:nth-child(1n) .fullstack {
     display: inline-block;
     text-transform: capitalize;
@@ -952,6 +955,7 @@ header {
   .card:nth-child(4n) .facebookdis {
     display: none;
   }
+
   .card:nth-child(1n) .fullstackdis {
     display: none;
   }
@@ -1050,7 +1054,7 @@ header {
     width: 447px;
   }
 
-  .about-head > .btn4 {
+  .about-head>.btn4 {
     width: 162px;
     padding: 8px;
     margin-top: 12px;
@@ -1058,7 +1062,7 @@ header {
     color: #396df2;
   }
 
-  .card:nth-child(1n) > .btn4 {
+  .card:nth-child(1n)>.btn4 {
     background-color: #4053fc;
     color: #fff;
     padding: 12px;
