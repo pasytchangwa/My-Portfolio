@@ -9,17 +9,23 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="toolbar">
-        <a href="./index.html" class="logo"
+      <header>
+        <div class="toolbar">
+          <a href="./index.html" class="logo"
           ><img src="./image/images-head/logo.png" alt="MyLogo" />
-        </a>
-        <nav class="nav-btn">
-          <img src="./image/images-head/union.png" alt="navbarimage" />
-        </nav>
-      </header>
-      <main>
-        <section class="headline">
-          <h1 class="headline-title">I'm Sylvestre Glad to see you!</h1>
+          </a>
+          <nav class="nav-btn">
+           <img src="./image/images-head/union.png" alt="navbarimage" />
+          </nav>
+          <ul class="nav-links">
+             <li><a href="#">portfolio</a></li>
+             <li><a href="#">about</a></li>
+             <li><a href="#">contact</a></li>
+           </ul>
+        </div>
+        <div class="headline">
+          <h1 class="headline-title">I'm Sylvestre<br>
+            Glad to see you!</h1>
           <p class="headline-info">
             I’m a software developer! I can help you build a product , feature
             or website Look through some of my work and experience! If you like
@@ -54,9 +60,10 @@
               /></a>
             </li>
           </ul>
-        </section>
-        <section class="main-card-section">
-          <ul class="card-section">
+        </div>
+      </header>
+      <main>
+        <ul class="card-section">
             <li class="card">
               <div class="section-img">
                 <img
@@ -64,28 +71,34 @@
                   alt="myproject"
                 />
               </div>
-              <h2 class="title">Tonic</h2>
-              <ul class="info">
-                <li>canopy</li>
-                <li>
-                  <img src="./image/images-main/Counter.png" alt="counter" />
-                </li>
-                <li>back end dev</li>
-                <li>
-                  <img src="./image/images-main/Counter.png" alt="counter" />
-                </li>
-                <li>2015</li>
-              </ul>
-              <p class="section-info">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups require
-              </p>
-              <ul class="program-btns">
-                <li class="btn-ctn btn-html">html</li>
-                <li class="btn-ctn btn-css">css</li>
-                <li class="btn-ctn btn-js">javaScript</li>
-              </ul>
-              <a href="#" class="btn4">See Project</a>
+              <div class="card-body">
+                <h2 class="title title3">Tonic</h2>
+                <h2 class="titledisappear">Facebook 360</h2>
+                <ul class="info">
+                  <li class="facebookdis">canopy</li>
+                  <li class="facebook">facebook</li>
+                  <li>
+                    <img src="./image/images-main/Counter.png" alt="counter" />
+                  </li>
+                  <li class="fullstackdis">back end dev</li>
+                  <li class="fullstack">fulll stack dev</li>
+                  <li>
+                    <img src="./image/images-main/Counter.png" alt="counter" />
+                  </li>
+                  <li>2015</li>
+                </ul>
+                <p class="section-info">
+                  A daily selection of privately personalized reads; no accounts
+                  or sign-ups require
+                </p>
+                <ul class="program-btns">
+                  <li class="btn-ctn btn-html">html</li>
+                  <li class="btn-ctn btn-ruby">ruby on rails</li>
+                  <li class="btn-ctn btn-css">css</li>
+                  <li class="btn-ctn btn-js">javaScript</li>
+                </ul>
+                <a href="#" class="btn4">See Project</a>
+              </div>
             </li>
             <li class="card">
               <div class="section-img">
@@ -94,58 +107,72 @@
                   alt="myproject"
                 />
               </div>
-              <h2 class="title">multi-Post stories</h2>
-              <ul class="info">
-                <li>canopy</li>
-                <li>
-                  <img src="./image/images-main/Counter.png" alt="counter" />
-                </li>
-                <li>back end dev</li>
-                <li>
-                  <img src="./image/images-main/Counter.png" alt="counter" />
-                </li>
-                <li>2015</li>
-              </ul>
-              <p class="section-info">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
-              </p>
-              <ul class="program-btns">
-                <li class="btn-ctn btn-html">html</li>
-                <li class="btn-ctn btn-css">css</li>
-                <li class="btn-ctn btn-js">javaScript</li>
-              </ul>
-              <a href="#" class="btn4">See Project</a>
+              <div class="card-body">
+                <h2 class="title title2 title4">multi-Post<br> stories</h2>
+                <h2 class="titledisappear">Uber navigation</h2>
+                <ul class="info">
+                  <li class="uberdis">canopy</li>
+                  <li class="uber">uber</li>
+                  <li>
+                    <img src="./image/images-main/Counter.png" alt="counter" />
+                  </li>
+                  <li class="leaddevdis">back end dev</li>
+                  <li class="leaddev">lead developer</li>
+                  <li>
+                    <img src="./image/images-main/Counter.png" alt="counter" />
+                  </li>
+                  <li class="yeardis">2015</li>
+                  <li class="year">2018</li>
+                </ul>
+                <p class="section-info">
+                  A daily selection of privately personalized reads; no accounts
+                  or sign-ups required.
+                </p>
+                <ul class="program-btns">
+                  <li class="btn-ctn btn-html">html</li>
+                  <li class="btn-ctn btn-ruby">ruby on rails</li>
+                  <li class="btn-ctn btn-css">css</li>
+                  <li class="btn-ctn btn-js">javaScript</li>
+                </ul>
+                <a href="#" class="btn4">See Project</a>
+              </div>
             </li>
             <li class="card">
               <div class="section-img">
-                <img
+                <img class="appear"
                   src="./image/images-main/snapshootportfolio3.png"
                   alt="myproject"
                 />
+                <img class="appear2"
+                  src="./image/images-main/snapshootportfolio5.png"
+                  alt="myproject"
+                />
               </div>
-              <h2 class="title">tonic</h2>
-              <ul class="info">
-                <li>canopy</li>
-                <li>
-                  <img src="./image/images-main/Counter.png" alt="counter" />
-                </li>
-                <li>back end dev</li>
-                <li>
-                  <img src="./image/images-main/Counter.png" alt="counter" />
-                </li>
-                <li>2015</li>
-              </ul>
-              <p class="section-info">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
-              </p>
-              <ul class="program-btns">
-                <li class="btn-ctn btn-html">html</li>
-                <li class="btn-ctn btn-css">css</li>
-                <li class="btn-ctn btn-js">javaScript</li>
-              </ul>
-              <a href="#" class="btn4">See Project</a>
+              <div class="card-body">
+                <h2 class="title">tonic</h2>
+                <ul class="info">
+                  <li>canopy</li>
+                  <li>
+                    <img src="./image/images-main/Counter.png" alt="counter" />
+                  </li>
+                  <li>back end dev</li>
+                  <li>
+                    <img src="./image/images-main/Counter.png" alt="counter" />
+                  </li>
+                  <li>2015</li>
+                </ul>
+                <p class="section-info">
+                  A daily selection of privately personalized reads; no accounts
+                  or sign-ups required.
+                </p>
+                <ul class="program-btns">
+                  <li class="btn-ctn btn-html">html</li>
+                  <li class="btn-ctn btn-ruby">ruby on rails</li>
+                  <li class="btn-ctn btn-css">css</li>
+                  <li class="btn-ctn btn-js">javaScript</li>
+                </ul>
+                <a href="#" class="btn4">See Project</a>
+              </div>
             </li>
             <li class="card">
               <div class="section-img">
@@ -154,31 +181,35 @@
                   alt="myproject"
                 />
               </div>
-              <h2 class="title">multi-Post stories</h2>
-              <ul class="info">
-                <li>canopy</li>
-                <li>
-                  <img src="./image/images-main/Counter.png" alt="counter" />
-                </li>
-                <li>back end dev</li>
-                <li>
-                  <img src="./image/images-main/Counter.png" alt="counter" />
-                </li>
-                <li>2015</li>
-              </ul>
-              <p class="section-info">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
-              </p>
-              <ul class="program-btns">
-                <li class="btn-ctn btn-html">html</li>
-                <li class="btn-ctn btn-css">css</li>
-                <li class="btn-ctn btn-js">javaScript</li>
-              </ul>
-              <a href="#" class="btn4">See Project</a>
-            </li>
-          </ul>
-        </section>
+              <div class="card-body">
+                <h2 class="title title2">multi-Post<br> stories</h2>
+                <ul class="info">
+                  <li class="facebookdis">canopy</li>
+                  <li class="facebook">facebook</li>
+                  <li>
+                    <img src="./image/images-main/Counter.png" alt="counter" />
+                  </li>
+                  <li class="fullstackdis">back end dev</li>
+                  <li class="fullstack">fulll stack dev</li>
+                  <li>
+                    <img src="./image/images-main/Counter.png" alt="counter" />
+                  </li>
+                  <li>2015</li>
+                </ul>
+                <p class="section-info">
+                  A daily selection of privately personalized reads; no accounts
+                  or sign-ups required.
+                </p>
+                <ul class="program-btns">
+                  <li class="btn-ctn btn-html">html</li>
+                  <li class="btn-ctn btn-ruby">ruby on rails</li>
+                  <li class="btn-ctn btn-css">css</li>
+                  <li class="btn-ctn btn-js">javaScript</li>
+                </ul>
+                <a href="#" class="btn4">See Project</a>
+              </div>
+            </li> -->
+        </ul>
         <section class="about-section">
           <div class="about-head">
             <h2 class="about-title">
@@ -225,7 +256,7 @@
             <li class="skill-head">
               <h3 class="skill-title">
                 <span>languages</span>
-                <span
+                <span class="chevron"
                   ><img src="./image/images-main/arrdwn.png" alt="dropdown"
                 /></span>
               </h3>
@@ -260,9 +291,6 @@
                   ><img src="./image/images-main/arrfrw.png" alt="forward"
                 /></span>
               </h3>
-              <span class="separator"
-                ><img src="./image/images-main/Separator.svg" alt="separator"
-              /></span>
             </li>
             <li class="skill-skills">
               <h3 class="skill-title">
@@ -271,9 +299,6 @@
                   ><img src="./image/images-main/arrfrw.png" alt="forward"
                 /></span>
               </h3>
-              <span class="separator"
-                ><img src="./image/images-main/Separator.svg" alt="separator"
-              /></span>
             </li>
           </ul>
         </section>
