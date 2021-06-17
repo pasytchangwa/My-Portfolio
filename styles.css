@@ -40,10 +40,9 @@ header {
   padding-top: 44px;
   padding-bottom: 22px;
   border-bottom-left-radius: 80px;
-  background: #fff, url("./image/images-main/mobile.png");
+  background: #fff url("./image/images-main/mobile.png") no-repeat;
   background-position-x: -34px;
   background-position-y: 104px;
-  background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
   object-fit: cover;
@@ -241,6 +240,11 @@ header {
   padding-bottom: 8px;
   padding-left: 0px;
   color: #7a869a;
+}
+
+.hand-cursor {
+  display: none;
+    
 }
 
 .card .info li:nth-child(1n) {
@@ -479,7 +483,7 @@ header {
 }
 
 .language-link {
-  margin: 21px 12px 21.72px 5px;
+  margin: 6px 12px 20px 12px;
   height: 24px;
   color: #253858;
   font-size: 15px;
@@ -759,7 +763,7 @@ header {
 
   .section-img > img {
     width: 100%;
-    height: 95%;
+    height: 90%;
   }
 
   .card {
@@ -770,7 +774,7 @@ header {
     grid-template-rows: 1fr;
     column-gap: 22px;
     padding: 24px 22px 7px 24px;
-    width: 100%;
+    min-width: 1156px;
     height: 100%;
   }
 
@@ -809,9 +813,9 @@ header {
     display: flex;
     flex-direction: column;
     row-gap: 12px;
-    height: 90%;
+    height: 465;
     padding: 24px 24px 140px 24px;
-    width: 100%;
+    min-width: 544;
     padding-top: 24px;
   }
 
@@ -872,6 +876,20 @@ header {
     line-height: 24px;
     font-weight: 400;
     color: #6b778c;
+  }
+
+  .hand-cursor {
+    display: block;
+    width: 57px;
+    height: 57px;
+    position: relative;
+    left: 390px;
+    bottom: 40px;
+  }
+
+  .hand-img {
+    width: 100%;
+    display: block;
   }
 
   .card .info li:first-child {
@@ -971,7 +989,7 @@ header {
     color: #344563;
     line-height: 24px;
     height: 70px;
-    width: 496px;
+    min-width: 496px;
     margin-bottom: 12px;
   }
 
@@ -1004,6 +1022,10 @@ header {
     letter-spacing: 3%;
     font-size: 17px;
     border: 1px solid #6070ff;
+  }
+
+  .btn-desk {
+    background-color: #4053fc;
   }
 
   .about-section {
@@ -1087,10 +1109,6 @@ header {
     align-items: flex-start;
     width: 122px;
     height: 120px;
-  }
-
-  .language-list-ctn > a {
-    margin: 6px 12px 20px 12px;
   }
 
   .ctn-img {
