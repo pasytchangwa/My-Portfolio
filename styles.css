@@ -688,7 +688,7 @@ header {
 }
 
 .btn5:hover {
-  background-color: #2230d2;;
+  background-color: #2230d2;
   border-radius: 16px;
   color: #fff;
   transition: all, 0.5s linear;
@@ -720,14 +720,14 @@ header {
   transition: all, 0.5s linear;
 }
 
-.about-section .btn4:hover {
-  color: #fff;
-}
-
 .btn4:enabled {
   border: 1px solid #7fbcff;
   background-color: #fff;
   color: #7f8cff;
+}
+
+.about-section .btn4:hover {
+  color: #fff;
 }
 
 @media screen and (min-width: 992px) {
