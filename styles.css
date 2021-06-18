@@ -677,7 +677,7 @@ header {
   color: #7f8cff;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .nav-btn {
     display: none;
   }
@@ -976,14 +976,25 @@ header {
 
   .card:nth-child(2n) .uber {
     display: inline-block;
+    color: #344563;
   }
 
   .card:nth-child(2n) .leaddev {
     display: inline-block;
+    color: #7a869a;
+    display: inline-block;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 0;
   }
 
   .card:nth-child(2n) .year {
     display: inline-block;
+    color: #7a869a;
   }
 
   .section-info {
@@ -1028,6 +1039,7 @@ header {
 
   .btn-desk {
     background-color: #4053fc;
+    color: white
   }
 
   .about-section {
@@ -1141,7 +1153,7 @@ header {
   }
 
   .footer-section {
-    background-image: url(/image/images-main/contact-desk2.svg);
+    background-image: url(./image/images-main/contact-desk2.svg);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position-x: 75.34px;
@@ -1165,7 +1177,7 @@ header {
     padding: 0;
     display: flex;
     flex-direction: column;
-    row-gap: 27px;
+    row-gap: 35px;
     align-items: center;
   }
 
