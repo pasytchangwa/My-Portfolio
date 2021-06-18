@@ -982,7 +982,6 @@ header {
   .card:nth-child(2n) .leaddev {
     display: inline-block;
     color: #7a869a;
-    display: inline-block;
     text-transform: capitalize;
     font-weight: 600;
     font-size: 18px;
@@ -1039,7 +1038,7 @@ header {
 
   .btn-desk {
     background-color: #4053fc;
-    color: white
+    color: white;
   }
 
   .about-section {
