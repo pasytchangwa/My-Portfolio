@@ -136,6 +136,11 @@ header {
   color: #50505f79;
 }
 
+.social-icons li:hover {
+  transform: scale(1.2);
+  transition: all, 0.7s, ease-in;
+}
+
 /* End of Headline-Section */
 
 /* Card section */
