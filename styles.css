@@ -67,6 +67,28 @@ header {
   width: 100px;
 }
 
+.logo:hover {
+  animation: logoplay 3s ease 2;
+}
+
+@keyframes logoplay {
+  0% {
+    transform: rotate(20deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(340deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 .nav-btn {
   font-weight: lighter;
   border: none;
@@ -74,6 +96,21 @@ header {
   padding: 8px;
   width: 40px;
   height: 40px;
+  animation: bounce 2s ease infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .nav-btn > img {
@@ -136,6 +173,11 @@ header {
   color: #50505f79;
 }
 
+.social-icons li:hover {
+  transform: scale(1.2);
+  transition: all, 0.7s, ease-in;
+}
+
 /* End of Headline-Section */
 
 /* Card section */
@@ -156,6 +198,11 @@ header {
   width: 295px;
   height: 220px;
   border-radius: 8px;
+}
+
+.section-img:hover {
+  transform: scale(1.05);
+  transition: all, 0.7s, ease-in;
 }
 
 .section-img > img {
@@ -641,9 +688,10 @@ header {
 }
 
 .btn5:hover {
-  background-color: #6070ff;
+  background-color: #2230d2;
   border-radius: 16px;
   color: #fff;
+  transition: all, 0.5s linear;
 }
 
 .footer-line {
@@ -669,12 +717,17 @@ header {
   background-color: #6070ff;
   border-radius: 16px;
   color: #fff;
+  transition: all, 0.5s linear;
 }
 
 .btn4:enabled {
   border: 1px solid #7fbcff;
   background-color: #fff;
   color: #7f8cff;
+}
+
+.about-section .btn4:hover {
+  color: #fff;
 }
 
 @media screen and (min-width: 992px) {
@@ -690,7 +743,6 @@ header {
     text-transform: capitalize;
     font-size: 15px;
     font-weight: 500;
-    color: #344563;
     line-height: 20px;
   }
 
@@ -698,6 +750,14 @@ header {
     margin: 0;
     padding: 10px 12px;
     margin-left: 8px;
+    color: #344563;
+  }
+
+  .nav-links li a:hover {
+    border: 1px solid blue;
+    background-color: yellow;
+    color: red;
+    transition: all, 2s, ease-in-out;
   }
 
   header {
