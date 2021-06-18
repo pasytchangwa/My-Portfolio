@@ -158,6 +158,11 @@ header {
   border-radius: 8px;
 }
 
+.section-img:hover {
+  transform: scale(1.05);
+  transition: all, 0.7s, ease-in;
+}
+
 .section-img > img {
   box-sizing: border-box;
 }
