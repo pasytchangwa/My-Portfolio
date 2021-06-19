@@ -594,7 +594,7 @@ main {
   padding-left: 24px;
   padding-right: 24px;
   background-color: #6070ff;
-  background-image: url(./image/images-main/contact-bg.svg)
+  background-image: url(./image/images-main/contact-bg.svg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position-x: 153px;
