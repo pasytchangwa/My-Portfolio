@@ -58,6 +58,12 @@ header {
   align-items: center;
   padding: 4px 24px 4px 12px;
   margin: 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background-color: white;
+  box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -136,7 +142,7 @@ header {
   line-height: 52px;
   color: #172b4d;
   height: 150px;
-  width: 100%;
+  width: 327px;
 }
 
 .headline-info {
@@ -146,6 +152,7 @@ header {
   font-weight: 400;
   height: 146px;
   font-family: "Poppins", sans-serif;
+  width: 100%;
 }
 
 .media-info {
@@ -181,6 +188,9 @@ header {
 /* End of Headline-Section */
 
 /* Card section */
+main {
+  width: 100%;
+}
 
 .card-section {
   display: grid;
@@ -195,8 +205,7 @@ header {
 }
 
 .section-img {
-  width: 295px;
-  height: 220px;
+  width: 100%;
   border-radius: 8px;
 }
 
@@ -205,8 +214,17 @@ header {
   transition: all, 0.7s, ease-in;
 }
 
-.section-img > img {
-  box-sizing: border-box;
+.section-img img {
+  width: 100%;
+  max-width: 363px;
+  display: block;
+  object-fit: cover;
+}
+
+.appear2 {
+  width: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 .card {
@@ -216,7 +234,9 @@ header {
   flex-direction: column;
   row-gap: 12px;
   background-color: white;
-  padding: 16px 16px 28px 16px;
+  padding: 16px 16px 16px 16px;
+  height: 552px;
+  width: 100%;
 }
 
 .card-body {
@@ -225,6 +245,9 @@ header {
   display: flex;
   flex-direction: column;
   row-gap: 12px;
+  height: 288px;
+  width: 100%;
+  padding-bottom: 12px;
 }
 
 .card:nth-child(1n) {
@@ -263,7 +286,7 @@ header {
   font-weight: 700;
   line-height: 44px;
   text-transform: capitalize;
-  width: 295px;
+  width: 100%;
 }
 
 .card .title2 {
@@ -272,6 +295,7 @@ header {
 
 .card .info {
   display: flex;
+  column-gap: 12px;
   height: 32px;
   padding: 0;
   min-width: 100%;
@@ -282,11 +306,12 @@ header {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  margin-right: 20px;
+  margin-right: 0;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 0;
   color: #7a869a;
+  height: 32px;
 }
 
 .hand-cursor {
@@ -299,12 +324,6 @@ header {
   font-size: 13px;
   font-weight: 600;
   line-height: 16px;
-}
-
-.card .info li:last-child {
-  width: 29px;
-  height: 16px;
-  color: #7a869a;
 }
 
 .card:nth-child(1n) .facebook {
@@ -346,10 +365,10 @@ header {
   color: #344563;
   font-weight: 400;
   line-height: 24px;
-  height: 76px;
-  width: 295px;
+  width: 100%;
   font-family: "Poppins", sans-serif;
   font-style: normal;
+  padding-bottom: 0;
 }
 
 .program-btns {
@@ -361,8 +380,6 @@ header {
 .btn-ctn {
   margin-right: 8px;
   display: flex;
-  align-items: center;
-  justify-content: center;
   height: 24px;
   background-color: #ebebff;
   border: none;
@@ -372,6 +389,7 @@ header {
   font-size: 12px;
   line-height: 16px;
   font-weight: 500;
+  letter-spacing: 3%;
 }
 
 .btn-html {
@@ -414,6 +432,7 @@ header {
   flex-direction: column;
   row-gap: 24px;
   height: 1263px;
+  width: 100%;
   background-color: #fff;
   border-top-right-radius: 80px;
 }
@@ -424,6 +443,7 @@ header {
   align-items: flex-start;
   row-gap: 12px;
   height: 409px;
+  width: 100%;
   padding: 0;
   margin: 0;
 }
@@ -440,7 +460,7 @@ header {
 
 .about-info {
   height: 144px;
-  width: 327px;
+  width: 100%;
   font-size: 16px;
   line-height: 24px;
   color: #344563;
@@ -485,6 +505,7 @@ header {
   grid-template-columns: 1fr;
   grid-template-rows: 320.15px 72px 72px;
   row-gap: 0;
+  width: 100%;
 }
 
 .skill-head {
@@ -518,31 +539,33 @@ header {
   grid-template-rows: 72px 72px 72px;
   row-gap: 12px;
   padding: 12px;
+  width: 100%;
 }
 
 .language-list-ctn {
   display: flex;
   align-items: center;
-  width: 303px;
+  width: 100%;
   height: 66.72px;
   border-radius: 8px;
   background-color: #f7f7f9;
 }
 
 .language-link {
-  margin: 6px 12px 20px 12px;
+  margin: 6px 12px 2px 10px;
   height: 24px;
   color: #253858;
   font-size: 15px;
   line-height: 20px;
   font-weight: 500;
   vertical-align: top;
+  align-self: center;
 }
 
 .ctn-img {
   width: 48px;
   height: 48px;
-  margin: 9px;
+  margin-top: 9px;
   margin-bottom: 9.72px;
   margin-left: 12px;
 }
@@ -554,6 +577,7 @@ header {
   margin: 0;
   padding: 0;
   border-bottom: 1px solid #dfe1e6;
+  width: 100%;
 }
 
 .skill-skills {
@@ -562,6 +586,7 @@ header {
   grid-template-rows: 72px;
   padding-bottom: 0;
   border-bottom: 1px solid #dfe1e6;
+  width: 100%;
 }
 
 .footer-section {
@@ -569,11 +594,11 @@ header {
   padding-left: 24px;
   padding-right: 24px;
   background-color: #6070ff;
-  background-image: url(/image/images-main/contact-bcg.png);
+  background-image: url(./image/images-main/contact-bg.svg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position-x: 153px;
-  background-position-y: 21px;
+  background-position-y: 23px;
   min-height: 779px;
   margin-top: -137.85px;
   padding-top: 103px;
@@ -795,7 +820,7 @@ header {
     line-height: 60px;
     letter-spacing: 0.37px;
     color: #091e42;
-    min-height: 122px;
+    height: 122px;
     width: 920px;
   }
 
@@ -811,18 +836,23 @@ header {
     flex-direction: column;
     row-gap: 142px;
     padding: 142px 142px;
-    min-height: 100%;
+    min-height: 496px;
   }
 
   .section-img {
     width: 100%;
+    height: 448px;
+    padding-bottom: 0;
+  }
+
+  .appear2 {
+    width: 100%;
     height: 100%;
-    padding-bottom: 1px;
   }
 
   .section-img > img {
-    width: 100%;
-    height: 90%;
+    max-width: 100%;
+    height: 100%;
   }
 
   .card {
@@ -832,17 +862,21 @@ header {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     column-gap: 22px;
-    padding: 24px 22px 7px 24px;
-    min-width: 1156px;
-    height: 100%;
+    padding: 24px 22px 24px 24px;
+    width: 100%;
+    height: 496px;
   }
 
   .card:nth-child(1n) {
     order: -1;
+    width: 100%;
+    height: 496px;
   }
 
   .card:nth-child(2n) {
     order: 0;
+    width: 100%;
+    height: 496px;
   }
 
   .card:nth-child(2n) > .section-img {
@@ -851,10 +885,14 @@ header {
 
   .card:nth-child(3n) {
     order: -3;
+    width: 100%;
+    height: 496px;
   }
 
   .card:nth-child(4n) {
     order: -2;
+    width: 100%;
+    height: 496px;
   }
 
   .card:nth-child(4n) > .section-img {
@@ -874,14 +912,14 @@ header {
     flex-direction: column;
     row-gap: 12px;
     height: 465px;
-    padding: 24px 24px 140px 24px;
-    min-width: 544px;
+    padding: 24px 24px 137px 24px;
+    max-width: 100%;
     padding-top: 24px;
   }
 
   .card .title {
     height: 46px;
-    min-width: 496px;
+    width: 100%;
     color: #091e42;
     font-size: 40px;
     line-height: 52px;
@@ -900,7 +938,7 @@ header {
   .card:nth-child(1n) .titledisappear {
     display: inline-block;
     height: 46px;
-    min-width: 496px;
+    width: 496px;
     color: #091e42;
     font-size: 40px;
     line-height: 52px;
@@ -911,7 +949,7 @@ header {
   .card:nth-child(2n) .titledisappear {
     display: inline-block;
     height: 46px;
-    min-width: 496px;
+    width: 496px;
     color: #091e42;
     font-size: 40px;
     line-height: 52px;
@@ -921,13 +959,13 @@ header {
 
   .card .title2 {
     height: 46px;
-    width: 496px;
+    width: 100%;
     margin-bottom: 50px;
   }
 
   .card .info {
     display: flex;
-    min-width: 297px;
+    width: 297px;
     margin-bottom: 24px;
   }
 
@@ -1061,7 +1099,7 @@ header {
     color: #344563;
     line-height: 24px;
     height: 70px;
-    min-width: 496px;
+    width: 100%;
     margin-bottom: 12px;
   }
 
@@ -1103,24 +1141,27 @@ header {
 
   .about-section {
     display: grid;
-    grid-template-columns: 447px 684px;
+    grid-template-columns: 1fr 1fr;
     column-gap: 25px;
     padding: 142px 142px 390px 142px;
     height: 924px;
+    width: 100%;
   }
 
   .about-head {
     height: 392px;
+    width: 100%;
   }
 
   .about-title {
     color: #091e42;
     height: 114px;
+    width: 100%;
   }
 
   .about-info {
     height: 102px;
-    width: 447px;
+    width: 100%;
   }
 
   .about-head > .btn4 {
@@ -1141,9 +1182,9 @@ header {
   .skills {
     height: 360px;
     display: grid;
-    grid-template-columns: 684px;
+    grid-template-columns: 1fr;
     grid-template-rows: 216px 72px 72px;
-    width: 684px;
+    width: 100%;
     margin-bottom: 166px;
   }
 
@@ -1160,12 +1201,13 @@ header {
     justify-content: space-between;
     padding: 24px 24px;
     height: 72px;
+    width: 100%;
   }
 
   .skill-title .span {
     text-transform: capitalize;
     height: 24px;
-    width: 582px;
+    width: 100%;
   }
 
   .language-list {
@@ -1173,7 +1215,7 @@ header {
     display: flex;
     column-gap: 12px;
     padding: 12px;
-    width: 414px;
+    width: 100%;
   }
 
   .language-list-ctn {
@@ -1198,7 +1240,7 @@ header {
     grid-template-rows: 72px;
     margin: 0;
     padding: 0;
-    width: 684px;
+    width: 100%;
     border-bottom: 1px solid #dfe1e6;
   }
 
@@ -1215,8 +1257,8 @@ header {
     background-image: url(./image/images-main/contact-desk2.svg);
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-position-x: 75.34px;
-    background-position-y: 79px;
+    background-position-x: 100%;
+    background-position-y: 100%;
     height: 846px;
     margin-top: -256px;
     padding: 142px 319px 127px 320px;
