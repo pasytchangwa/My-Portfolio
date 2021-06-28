@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 /* General Rules */
 
@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 ul {
@@ -40,7 +40,7 @@ header {
   padding-top: 44px;
   padding-bottom: 22px;
   border-bottom-left-radius: 80px;
-  background: #fff url("./image/images-main/mobile.png") no-repeat;
+  background: #fff url('./image/images-main/mobile.png') no-repeat;
   background-position-x: -34px;
   background-position-y: 104px;
   background-size: cover;
@@ -102,7 +102,6 @@ header {
   padding: 8px;
   width: 40px;
   height: 40px;
-  animation: bounce 2s ease infinite;
 }
 
 @keyframes bounce {
@@ -130,13 +129,13 @@ header {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 3;
+  z-index: 15;
   top: 0;
   left: 0;
   background-color: rgba(96, 112, 255, 1);
   overflow-x: hidden;
+  transition: 0.5s;
   backdrop-filter: blur(7px);
-  transition: all 0.5s ease;
   opacity: 95%;
   mix-blend-mode: multiply;
 }
@@ -200,7 +199,7 @@ header {
   color: #344563;
   font-weight: 400;
   height: 146px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   width: 100%;
 }
 
@@ -210,7 +209,7 @@ header {
   font-style: normal;
   color: #7f8cff;
   font-weight: 500;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .headline .social-icons {
@@ -415,7 +414,7 @@ main {
   font-weight: 400;
   line-height: 24px;
   width: 100%;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   padding-bottom: 0;
 }
@@ -664,7 +663,7 @@ main {
   line-height: 52px;
   height: 56px;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .footer-info {
@@ -675,7 +674,7 @@ main {
   text-align: center;
   color: #ebebff;
   margin-bottom: 63px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .footer-form {
@@ -721,25 +720,25 @@ main {
   padding: 15px 38px 15px 16px;
 }
 
-.footer-form ul li input[value="Yeremias"] {
+.footer-form ul li input[value='Yeremias'] {
   font-size: 17px;
   font-weight: 400;
   line-height: 20px;
   color: #172b4d;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
-.footer-form ul li input[value="natajayanj14@gmail.com"] {
+.footer-form ul li input[value='natajayanj14@gmail.com'] {
   font-size: 17px;
   font-weight: 400;
   line-height: 20px;
   color: #172b4d;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .footer-form textarea::placeholder {
   color: #b3bac5;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
@@ -753,7 +752,7 @@ main {
   font-size: 17px;
   line-height: 24px;
   font-weight: 500;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   border: none;
   border-radius: 8px;
   margin-bottom: 32px;
@@ -840,7 +839,7 @@ main {
     padding-top: 0;
     padding-bottom: 0;
     border-bottom-left-radius: 80px;
-    background: url("./image/images-main/header-desk3.svg");
+    background: url('./image/images-main/header-desk3.svg');
     background-position-x: 34.6px;
     background-position-y: 119px;
     background-repeat: no-repeat;
@@ -1363,7 +1362,7 @@ main {
 
   .footer-form textarea::placeholder {
     color: #b3bac5;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 17px;
     line-height: 24px;
     font-weight: 400;

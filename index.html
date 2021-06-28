@@ -24,14 +24,14 @@
           <a href="./index.html" class="logo"
           ><img src="./image/images-head/logo.png" alt="MyLogo" />
           </a>
-          <nav class="nav-btn" onclick="openNav()">
-           <img src="./image/images-head/union.png" alt="navbarimage" />
+          <nav class="nav-btn">
+           <div onclick='openNav()'><img src="./image/images-head/union.png" alt="navbarimage" /></div>
+           <ul class="nav-links">
+              <li><a href="#projects">portfolio</a></li>
+              <li><a href="#about">about</a></li>
+              <li><a href="#contact">contact</a></li>
+            </ul>
           </nav>
-          <ul class="nav-links">
-             <li><a href="#projects">portfolio</a></li>
-             <li><a href="#about">about</a></li>
-             <li><a href="#contact">contact</a></li>
-           </ul>
         </div>
         <div class="headline" id="Portfolio">
           <h1 class="headline-title">I'm Sylvestre<br>
@@ -364,13 +364,13 @@
     </div>
  <!-- Add JS file -->
     <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="javascript:void(0)" class="closebtn" onclick='closeNav()'>&times;</a>
       <div class="overlay-content">
-       <a href="#projects" onclick="closeNav()">Portfolio</a>
+       <a href="#projects" onclick='closeNav()'>Portfolio</a>
        <a href="#about" onclick="closeNav()">About</a>
        <a href="#contact" onclick="closeNav()">Contact</a>
       </div>
-    </div>  
+    </div>   -->
     <script src="./app.js">
     </script>
   </body>
