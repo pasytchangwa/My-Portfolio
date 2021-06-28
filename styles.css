@@ -133,7 +133,6 @@ header {
   z-index: 3;
   top: 0;
   left: 0;
-  margin-top: 5px;
   background-color: rgba(96, 112, 255, 1);
   overflow-x: hidden;
   backdrop-filter: blur(7px);
