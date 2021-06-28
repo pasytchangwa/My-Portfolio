@@ -154,7 +154,6 @@ header {
 .overlay a {
   padding: 8px;
   text-decoration: none;
-  /* color: #818181; */
   display: block;
   transition: 0.3s;
   color: #fff;
