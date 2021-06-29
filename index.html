@@ -25,7 +25,7 @@
           ><img src="./image/images-head/logo.png" alt="MyLogo" />
           </a>
           <nav class="nav-btn">
-           <img src="./image/images-head/union.png" alt="navbarimage" />
+           <div onclick='openNav()'><img src="./image/images-head/union.png" alt="navbarimage" /></div>
           </nav>
           <ul class="nav-links">
              <li><a href="#projects">portfolio</a></li>
@@ -33,7 +33,7 @@
              <li><a href="#contact">contact</a></li>
            </ul>
         </div>
-        <div class="headline">
+        <div class="headline" id="Portfolio">
           <h1 class="headline-title">I'm Sylvestre<br>
             Glad to see you!</h1>
           <p class="headline-info">
@@ -331,8 +331,7 @@
               <input
                 type="text"
                 name="username"
-                placeholder="Yeremias"
-                value="Yeremias"
+                placeholder="Enter your username"
                 maxlength="30"
                 required
               />
@@ -341,8 +340,7 @@
               <input
                 type="email"
                 name="email"
-                placeholder="natajayanj14@gmail.com"
-                value="natajayanj14@gmail.com"
+                placeholder="Enter your email"
                 required
               />
             </li>
@@ -362,5 +360,17 @@
         <div class="footer-line"></div>
       </footer>
     </div>
+ <!-- Add JS file -->
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick='closeNav()'>&times;</a>
+      <div class="overlay-content">
+       <a class='port' href="#projects" onclick='closeNav()'>Portfolio</a>
+       <a class='abt' href="#about" onclick="closeNav()">About</a>
+       <a class='cont' href="#contact" onclick="closeNav()">Contact</a>
+      </div>
+      <div class="footer-line2"></div>
+    </div>
+    <script src="./app.js">
+    </script>
   </body>
 </html>

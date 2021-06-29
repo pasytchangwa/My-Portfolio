@@ -2,9 +2,9 @@
 
 # Project online link
 
-https://pasytchangwa.github.io/My-Portfolio/
+[CLICK HERE](https://pasytchangwa.github.io/My-Portfolio/) for the online version
 
-# My Portfolio Project
+# My Portfolio Project: Adding Mobile Menu
 
 > This project aimed at setting up a mobile and desktop version of my personal portfolio and the following objectives were expected:
 
@@ -19,22 +19,27 @@ Additional description about the project and its features.
 
 ## Built With
 
-- HTML and CSS
+- HTML, CSS and JavaScript
 
 ## Getting Started
 
 **Requirements**
 
-- HTML and CSS linters
+- HTML, JavaScript linters
 - Github Pages
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Sylvestre**
 
-- Sylvestre: [@pasytchangwa](https://github.com/pasytchangwa)
-- Microverse: [@microversenic](https://github.com/microverseinc)
+- GitHub: [@pasytchangwa ](https://github.com/pasytchangwa)
+
+
+👤 **Elmar Abdulkarimov**
+
+- GitHub: [@elmar8287](https://github.com/elmar8287)
+
 
 ## 🤝 Contributing
 
