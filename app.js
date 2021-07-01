@@ -108,7 +108,7 @@ console.log(body);
 
 // Open Modal
 
-for (let i = 0; i < cardObjects.length;  i += 1) {
+for (let i=0; i < cardObjects.length;  i+=1) {
   cardObjects[i].cardbutton = cardBtn[i];
   if (cardObjects[i].cardbutton.classList.contains('myBtn1')) {
     cardObjects[i].cardbutton = cardBtn[0];
@@ -159,8 +159,8 @@ for (let i = 0; i < cardObjects.length;  i += 1) {
       div2.insertBefore(cardObjects[i].Image, div8);
       div2.insertBefore(cardObjects[i].info, cardObjects[i].Image);
       div7.insertBefore(cardObjects[i].technologies, div5);
-    }
-  };
+    };
+  }
 }
 
 // Closing
