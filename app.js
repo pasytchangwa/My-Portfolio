@@ -71,6 +71,7 @@ let cardObjects = [
 let div = document.createElement("div");
 div.className = "modal";
 div.id = "myModal";
+div.setAttribute('data-close-button', '');
 let div2 = document.createElement("div");
 div2.className = "modal-content modal-card";
 
@@ -136,6 +137,8 @@ let body = document.getElementById("body");
 body.appendChild(div);
 console.log(body);
 
+// Open
+
 for(let i = 0; i < cardObjects.length; i++) {
   cardObjects[i].cardbutton = cardBtn[i]
   if(cardObjects[i].cardbutton.classList.contains('myBtn1')) {
@@ -190,36 +193,3 @@ for(let i = 0; i < cardObjects.length; i++) {
 
 // Closing
 
-//let span = document.querySelector("#close");
-//     span.onclick = function () {
-//      let modal = document.getElementById("myModal");
-//      modal.style.display = "none";
-//     }
-
-// let modals = document.querySelectorAll("#modal");
-// let spans = document.querySelectorAll("#close");
-// for (let i = 0; i < spans.length; i++) {
-//   spans[i].addEventListener("click", function () {
-//     modals[i].style.display = "none";
-//   });
-// }
-// console.log(modals);
-
-for(let i = 0; i < cardObjects.length; i++) {
-  cardObjects[i].cardbutton = cardBtn[i]
-  if(cardObjects[i].cardbutton.classList.contains('myBtn1')) {
-    cardObjects[i].cardbutton = document.querySelector(".close")[0];
-    let span = document.querySelector(".close")[0];
-    span.onclick = function () {
-    let modal = document.getElementById("myModal")
-        modal.style.display = "none";
-      }
-    }
-    
-}
-
-// window.onclick = function (event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// };
