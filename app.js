@@ -15,10 +15,10 @@ const cardDesc = document.querySelectorAll('.section-info');
 const cardTech = document.querySelectorAll('.program-btns');
 const cardBtn = document.querySelectorAll('.myBtn');
 const cards = document.querySelectorAll('.card');
-const card1;
-const card2;
-const card3;
-const card4;
+const card1 = {};
+const card2 = {};
+const card3= {};
+const card4 = {};
 const cardObjects = [
   (card1 = {
     title: cardTitle[0].innerHTML,
