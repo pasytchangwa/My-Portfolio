@@ -67,7 +67,7 @@ div2.appendChild(div3);
 const div8 = document.createElement('div');
 div8.className = 'modal-float2';
 const p = document.createElement('p');
-p.textContent ='Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent';
+p.textContent = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent';
 p.className = 'modal-desc';
 div8.appendChild(p);
 const div7 = document.createElement('div');
@@ -108,7 +108,7 @@ console.log(body);
 
 // Open Modal
 
-for (let i = 0; i < cardObjects.length; i++) {
+for (let i = 0; i < cardObjects.length;  i += 1) {
   cardObjects[i].cardbutton = cardBtn[i];
   if (cardObjects[i].cardbutton.classList.contains('myBtn1')) {
     cardObjects[i].cardbutton = cardBtn[0];
@@ -145,10 +145,9 @@ for (let i = 0; i < cardObjects.length; i++) {
       modal.style.display = 'block';
       h2.innerHTML = cardObjects[i].title;
       div2.insertBefore(cardObjects[i].Image, div8);
-      div2.insertBefore(cardObjects[i].info, cardObject[i].Image);
+      div2.insertBefore(cardObjects[i].info, cardObjects[i].Image);
       div7.insertBefore(cardObjects[i].technologies, div5);
-    }
-
+    };
   } else if (cardObjects[i].cardbutton.classList.contains('myBtn4')) {
     cardObjects[i].cardbutton = cardBtn[3];
     cardObjects[i] = card4;
@@ -161,7 +160,7 @@ for (let i = 0; i < cardObjects.length; i++) {
       div2.insertBefore(cardObjects[i].info, cardObjects[i].Image);
       div7.insertBefore(cardObjects[i].technologies, div5);
     }
-  }
+  };
 }
 
 // Closing
