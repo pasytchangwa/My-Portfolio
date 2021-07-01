@@ -8,18 +8,18 @@ function closeNav() {
 
 // Object creation
 
-let cardTitle = document.querySelectorAll('.card-body > h2');
+const cardTitle = document.querySelectorAll('.card-body > h2');
 const cardImage = document.querySelectorAll('.section-img');
 const cardInfo = document.querySelectorAll('.info');
 const cardDesc = document.querySelectorAll('.section-info');
 const cardTech = document.querySelectorAll('.program-btns');
 const cardBtn = document.querySelectorAll('.myBtn');
 const cards = document.querySelectorAll('.card');
-let card1;
-let card2;
-let card3;
-let card4;
-let cardObjects = [
+const card1;
+const card2;
+const card3;
+const card4;
+const cardObjects = [
   (card1 = {
     title: cardTitle[0].innerHTML,
     info: cardInfo[0],
@@ -77,7 +77,7 @@ const div8 = document.createElement('div');
 div8.className = 'modal-float2';
 const p = document.createElement('p');
 p.textContent =
-  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent';
+'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent';
 p.className = 'modal-desc';
 div8.appendChild(p);
 const div7 = document.createElement('div');
@@ -122,6 +122,7 @@ for (let i = 0; i < cardObjects.length; i++) {
   cardObjects[i].cardbutton = cardBtn[i];
   if (cardObjects[i].cardbutton.classList.contains('myBtn1')) {
     cardObjects[i].cardbutton = cardBtn[0];
+    cardObjects[i] = card1;
     const btn = cardObjects[i].cardbutton;
     btn.onclick = function () {
       const modal = document.getElementById('myModal');
@@ -134,6 +135,7 @@ for (let i = 0; i < cardObjects.length; i++) {
   }
   if (cardObjects[i].cardbutton.classList.contains('myBtn2')) {
     cardObjects[i].cardbutton = cardBtn[1];
+    cardObjects[i] = card2;
     const btn = cardObjects[i].cardbutton;
     btn.onclick = function () {
       const modal = document.getElementById('myModal');
@@ -146,6 +148,7 @@ for (let i = 0; i < cardObjects.length; i++) {
   }
   if (cardObjects[i].cardbutton.classList.contains('myBtn3')) {
     cardObjects[i].cardbutton = cardBtn[2];
+    cardObjects[i] = card3;
     const btn = cardObjects[i].cardbutton;
     btn.onclick = function () {
       const modal = document.getElementById('myModal');
@@ -157,6 +160,7 @@ for (let i = 0; i < cardObjects.length; i++) {
     };
   } else if (cardObjects[i].cardbutton.classList.contains('myBtn4')) {
     cardObjects[i].cardbutton = cardBtn[3];
+    cardObjects[i] = card4;
     const btn = cardObjects[i].cardbutton;
     btn.onclick = function () {
       const modal = document.getElementById('myModal');
