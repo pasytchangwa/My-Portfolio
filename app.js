@@ -1,11 +1,3 @@
-function openNav() {
-  document.getElementById('myNav').style.width = '100%';
-}
-
-function closeNav() {
-  document.getElementById('myNav').style.width = '0%';
-}
-
 // Object creation
 
 const cardTitle = document.querySelectorAll('.card-body > h2');
@@ -14,7 +6,6 @@ const cardInfo = document.querySelectorAll('.info');
 const cardDesc = document.querySelectorAll('.section-info');
 const cardTech = document.querySelectorAll('.program-btns');
 const cardBtn = document.querySelectorAll('.myBtn');
-const cards = document.querySelectorAll('.card');
 let card1 = {};
 let card2 = {};
 let card3 = {};
