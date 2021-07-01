@@ -109,66 +109,62 @@ body.appendChild(div);
 
 for (let i = 0; i < cardObjects.length; i += 1) {
   cardObjects[i].cardbutton = cardBtn[i];
-  if (cardObjects[i].cardbutton.classList.contains('myBtn1')) {
-    cardObjects[i].cardbutton = cardBtn[0];
+  if (cardObjects[i].cardbutton.classList.contains('myBtn1 myBtn')) {
     cardObjects[i] = card1;
     const btn = cardObjects[i].cardbutton;
-    btn.onclick = function () {
+    btn.addEventListener('click', () => {
       const modal = document.getElementById('myModal');
       modal.style.display = 'block';
       h2.innerHTML = cardObjects[i].title;
       div2.insertBefore(cardObjects[i].Image, div8);
       div2.insertBefore(cardObjects[i].info, cardObjects[i].Image);
       div7.insertBefore(cardObjects[i].technologies, div5);
-    };
+    });
   }
   if (cardObjects[i].cardbutton.classList.contains('myBtn2')) {
-    cardObjects[i].cardbutton = cardBtn[1];
     cardObjects[i] = card2;
     const btn = cardObjects[i].cardbutton;
-    btn.onclick = function () {
+    btn.addEventListener('click', () => {
       const modal = document.getElementById('myModal');
       modal.style.display = 'block';
       h2.innerHTML = cardObjects[i].title;
       div2.insertBefore(cardObjects[i].Image, div8);
       div2.insertBefore(cardObjects[i].info, cardObjects[i].Image);
       div7.insertBefore(cardObjects[i].technologies, div5);
-    };
+    });
   }
   if (cardObjects[i].cardbutton.classList.contains('myBtn3')) {
-    cardObjects[i].cardbutton = cardBtn[2];
     cardObjects[i] = card3;
     const btn = cardObjects[i].cardbutton;
-    btn.onclick = function () {
+    btn.addEventListener('click', () => {
       const modal = document.getElementById('myModal');
       modal.style.display = 'block';
       h2.innerHTML = cardObjects[i].title;
       div2.insertBefore(cardObjects[i].Image, div8);
       div2.insertBefore(cardObjects[i].info, cardObjects[i].Image);
       div7.insertBefore(cardObjects[i].technologies, div5);
-    };
+    });
   } else if (cardObjects[i].cardbutton.classList.contains('myBtn4')) {
-    cardObjects[i].cardbutton = cardBtn[3];
     cardObjects[i] = card4;
     const btn = cardObjects[i].cardbutton;
-    btn.onclick = function () {
+    btn.addEventListener('click', () => {
       const modal = document.getElementById('myModal');
       modal.style.display = 'block';
       h2.innerHTML = cardObjects[i].title;
       div2.insertBefore(cardObjects[i].Image, div8);
       div2.insertBefore(cardObjects[i].info, cardObjects[i].Image);
       div7.insertBefore(cardObjects[i].technologies, div5);
-    };
+    });
   }
 }
 
-var modal = document.getElementById('myModal');
-var span = document.getElementsByClassName('close')[0];
+const modal = document.getElementById('myModal');
+const span = document.getElementsByClassName('close')[0];
 span.onclick = function () {
   modal.style.display = 'none';
 };
 window.onclick = function (event) {
-  if (event.target == modal) {
+  if (event.target === modal) {
     modal.style.display = 'none';
   }
 };
