@@ -1,11 +1,11 @@
-// Object creation
-
+// Object creatio
 const cardTitle = document.querySelectorAll('.card-body > h2');
-const cardImage = document.querySelectorAll('.section-img');
+const cardImage = document.querySelectorAll('.section-img1');
 const cardInfo = document.querySelectorAll('.info');
 const cardDesc = document.querySelectorAll('.section-info');
 const cardTech = document.querySelectorAll('.program-btns');
 const cardBtn = document.querySelectorAll('.myBtn');
+var cards = document.querySelectorAll('.card');
 let card1 = {};
 let card2 = {};
 let card3 = {};
@@ -18,6 +18,8 @@ const cardObjects = [
     description: cardDesc[0],
     technologies: cardTech[0],
     cardbutton: cardBtn[0],
+    Live: 'https://pasytchangwa.github.io/My-Portfolio/',
+    Source: 'https://github.com/pasytchangwa/My-Portfolio',
   }),
   (card2 = {
     title: cardTitle[2].innerHTML,
@@ -26,6 +28,8 @@ const cardObjects = [
     description: cardDesc[1],
     technologies: cardTech[1],
     cardbutton: cardBtn[3],
+    Live: 'https://pasytchangwa.github.io/My-Portfolio/',
+    Source: 'https://github.com/pasytchangwa/My-Portfolio',
   }),
   (card3 = {
     title: cardTitle[4].innerHTML,
@@ -34,6 +38,8 @@ const cardObjects = [
     description: cardDesc[2],
     technologies: cardTech[2],
     cardbutton: cardBtn[4],
+    Live: 'https://pasytchangwa.github.io/My-Portfolio/',
+    Source: 'https://github.com/pasytchangwa/My-Portfolio',
   }),
   (card4 = {
     title: cardTitle[5].innerHTML,
@@ -42,6 +48,8 @@ const cardObjects = [
     description: cardDesc[2],
     technologies: cardTech[3],
     cardbutton: cardBtn[5],
+    Live: 'https://pasytchangwa.github.io/My-Portfolio/',
+    Source: 'https://github.com/pasytchangwa/My-Portfolio',
   }),
 ];
 
@@ -67,7 +75,8 @@ div2.appendChild(div3);
 const div8 = document.createElement('div');
 div8.className = 'modal-float2';
 const p = document.createElement('p');
-p.textContent = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent';
+p.textContent =
+  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent';
 p.className = 'modal-desc';
 div8.appendChild(p);
 const div7 = document.createElement('div');
@@ -109,7 +118,7 @@ body.appendChild(div);
 
 for (let i = 0; i < cardObjects.length; i += 1) {
   cardObjects[i].cardbutton = cardBtn[i];
-  if (cardObjects[i].cardbutton.classList.contains('myBtn1 myBtn')) {
+  if (cardObjects[i].cardbutton.classList.contains('myBtn1')) {
     cardObjects[i] = card1;
     const btn = cardObjects[i].cardbutton;
     btn.addEventListener('click', () => {
@@ -117,6 +126,7 @@ for (let i = 0; i < cardObjects.length; i += 1) {
       modal.style.display = 'block';
       h2.innerHTML = cardObjects[i].title;
       div2.insertBefore(cardObjects[i].Image, div8);
+      cardImage[0].style.display = 'block';
       div2.insertBefore(cardObjects[i].info, cardObjects[i].Image);
       div7.insertBefore(cardObjects[i].technologies, div5);
     });
@@ -129,6 +139,7 @@ for (let i = 0; i < cardObjects.length; i += 1) {
       modal.style.display = 'block';
       h2.innerHTML = cardObjects[i].title;
       div2.insertBefore(cardObjects[i].Image, div8);
+      cardImage[1].style.display = 'block';
       div2.insertBefore(cardObjects[i].info, cardObjects[i].Image);
       div7.insertBefore(cardObjects[i].technologies, div5);
     });
@@ -141,17 +152,19 @@ for (let i = 0; i < cardObjects.length; i += 1) {
       modal.style.display = 'block';
       h2.innerHTML = cardObjects[i].title;
       div2.insertBefore(cardObjects[i].Image, div8);
+      cardImage[2].style.display = 'block';
       div2.insertBefore(cardObjects[i].info, cardObjects[i].Image);
       div7.insertBefore(cardObjects[i].technologies, div5);
     });
   } else if (cardObjects[i].cardbutton.classList.contains('myBtn4')) {
-    cardObjects[i] = card4;
+    // cardObjects[i] = card4;
     const btn = cardObjects[i].cardbutton;
     btn.addEventListener('click', () => {
       const modal = document.getElementById('myModal');
       modal.style.display = 'block';
       h2.innerHTML = cardObjects[i].title;
       div2.insertBefore(cardObjects[i].Image, div8);
+      cardImage[3].style.display = 'block';
       div2.insertBefore(cardObjects[i].info, cardObjects[i].Image);
       div7.insertBefore(cardObjects[i].technologies, div5);
     });
@@ -162,9 +175,4 @@ const modal = document.getElementById('myModal');
 const span = document.getElementsByClassName('close')[0];
 span.onclick = function () {
   modal.style.display = 'none';
-};
-window.onclick = function (event) {
-  if (event.target === modal) {
-    modal.style.display = 'none';
-  }
 };
