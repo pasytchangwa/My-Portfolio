@@ -5,7 +5,6 @@ const cardInfo = document.querySelectorAll('.info');
 const cardDesc = document.querySelectorAll('.section-info');
 const cardTech = document.querySelectorAll('.program-btns');
 const cardBtn = document.querySelectorAll('.myBtn');
-var cards = document.querySelectorAll('.card');
 let card1 = {};
 let card2 = {};
 let card3 = {};
@@ -75,7 +74,7 @@ div2.appendChild(div3);
 const div8 = document.createElement('div');
 div8.className = 'modal-float2';
 const p = document.createElement('p');
-p.textContent ='Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent';
+p.textContent = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent';
 p.className = 'modal-desc';
 div8.appendChild(p);
 const div7 = document.createElement('div');
@@ -156,7 +155,7 @@ for (let i = 0; i < cardObjects.length; i += 1) {
       div7.insertBefore(cardObjects[i].technologies, div5);
     });
   } else if (cardObjects[i].cardbutton.classList.contains('myBtn4')) {
-    // cardObjects[i] = card4;
+    cardObjects[i] = card4;
     const btn = cardObjects[i].cardbutton;
     btn.addEventListener('click', () => {
       const modal = document.getElementById('myModal');
@@ -211,7 +210,7 @@ window.addEventListener('load', () => {
   if (JSON.parse(localStorage.getItem('contactInfo'))) {
     const { name, email, message } = JSON.parse(
       localStorage.getItem('contactInfo')
-    );
+    )
     emailInput.value = email;
     nameInput.value = name;
     messageInput.value = message;
@@ -235,4 +234,3 @@ inputsArray.forEach((input) => input.addEventListener('input', (e) => {
   }
   saveFormDataToLocalStorage(nameInput, emailInput, messageInput);
 }));
-
