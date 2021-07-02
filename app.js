@@ -213,7 +213,7 @@ window.addEventListener('load', () => {
     );
     emailInput.value = email,
     nameInput.value = name,
-    messageInput.value = message;
+    messageInput.value = message,
   }
 });
 inputsArray.forEach((input) => input.addEventListener('input', (e) => {
