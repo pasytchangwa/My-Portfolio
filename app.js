@@ -214,7 +214,7 @@ window.addEventListener('load', () => {
     emailInput.value = email;
     nameInput.value = name;
     messageInput.value = message;
-}
+    }
 });
 inputsArray.forEach((input) => input.addEventListener('input', (e) => {
   if (input === nameInput) {
