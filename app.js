@@ -6,8 +6,8 @@ const errorMessage = document.getElementById('invalid');
 form.addEventListener('submit', (e) => {
   if (email.value.toLowerCase() !== email.value) {
     e.preventDefault();
-    errorMessage.style.color = 'white'
-    errorMessage.style.fontWeight = 'bold'
+    errorMessage.style.color = 'white';
+    errorMessage.style.fontWeight = 'bold';
     errorMessage.textContent = 'Please use only lowercase letters for your e-mail!';
   }
 });
