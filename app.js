@@ -1,16 +1,3 @@
-var divValue = document.querySelector('nav-btn > div');
-var portValue = document.getElementsByClassName('port');
-var abtValue = document.getElementsByClassName('abt');
-var contValue = document.getElementsByClassName('cont');
-
-function openNav() {
-  document.getElementById('myNav').style.width = '100%';
-}
-
-function closeNav() {
-  document.getElementById('myNav').style.width = '0%';
-}
-
 // Form Validation
 
 const form = document.getElementById('footer-form');
