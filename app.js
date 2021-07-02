@@ -189,3 +189,36 @@ form.addEventListener('submit', (e) => {
     errorMessage.textContent = 'Use only lowercase letters for your e-mail!';
   }
 });
+
+// Storage
+
+function saveFormDataToLocalStorage(name, email, message) {
+  const contactInfo = {
+    name: name.value,
+    email: email.value,
+    message: message.value,
+  };
+  localStorage.setItem('contactInfo', JSON.stringify(contactInfo));
+}
+const nameInput = document.querySelector('footer form input[type="text"]');
+const emailInput = document.querySelector('footer form input[type=email]');
+const messageInput = document.querySelector('footer form textarea');
+const inputsArray = [emailInput, nameInput, messageInput];
+// GETTING FORM DATA FROM LOCAL STORAGE
+window.addEventListener('load', () => {
+  if (JSON.parse(localStorage.getItem('contactInfo'))) {
+    const { name, email, message } = JSON.parse(
+      localStorage.getItem('contactInfo')
+    );
+    emailInput.value = email;
+    nameInput.value = name;
+    messageInput.value = message;
+  }
+});
+inputsArray.forEach((input) =>
+  input.addEventListener('input', (e) => {
+    if (input === nameInput) {
+      nameInput.value = input.value;
+    } else if (input === emailInput) {
+      emailInput.value = input.value;
+
