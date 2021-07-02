@@ -1,7 +1,7 @@
-const divValue = document.querySelector('nav-btn > div');
-const portValue = document.getElementsByClassName('port');
-const abtValue = document.getElementsByClassName('abt');
-const contValue = document.getElementsByClassName('cont');
+var divValue = document.querySelector('nav-btn > div');
+var portValue = document.getElementsByClassName('port');
+var abtValue = document.getElementsByClassName('abt');
+var contValue = document.getElementsByClassName('cont');
 
 function openNav() {
   document.getElementById('myNav').style.width = '100%';
