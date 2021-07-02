@@ -170,6 +170,8 @@ for (let i = 0; i < cardObjects.length; i += 1) {
   }
 }
 
+// Closing modal
+
 const modal = document.getElementById('myModal');
 const span = document.getElementsByClassName('close')[0];
 span.onclick = function () {
