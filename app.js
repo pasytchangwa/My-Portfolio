@@ -221,4 +221,4 @@ inputsArray.forEach((input) =>
       nameInput.value = input.value;
     } else if (input === emailInput) {
       emailInput.value = input.value;
-
+    }
