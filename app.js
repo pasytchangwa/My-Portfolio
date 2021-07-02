@@ -215,12 +215,22 @@ window.addEventListener('load', () => {
     messageInput.value = message;
   }
 });
-inputsArray.forEach((input) => {
-  input.addEventListener('input', (e) => {
-    if (input === nameInput) {
-      nameInput.value = input.value;
-    } else if (input === emailInput) {
-      emailInput.value = input.value;
+inputsArray.forEach((input) => input.addEventListener('input', (e) => {
+  if (input === nameInput) {
+    nameInput.value = input.value;
+  } else if (input === emailInput) {
+    emailInput.value = input.value;
+    // VALIDATION EMAIL INPUT
+    if (e.target.value !== emailInput.value.toLowerCase()) {
+      e.preventDefault();
+      emailInput.parentElement.classList.add('invalidInput');
+    } else {
+      saveFormDataToLocalStorage(nameInput, emailInput, messageInput);
+      emailInput.parentElement.classList.remove('invalidInput');
     }
-  })
-})
+  } else {
+    messageInput.value = input.value;
+  }
+  saveFormDataToLocalStorage(nameInput, emailInput, messageInput);
+}));
+
