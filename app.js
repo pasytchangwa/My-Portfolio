@@ -4,10 +4,10 @@ const portValue = document.getElementsByClassName('port');
 const abtValue = document.getElementsByClassName('abt');
 const contValue = document.getElementsByClassName('cont');
 
-divValue.addEventListener('click', openNav());
-portValue.addEventListener('click', closeNav());
-abtValue.addEventListener('click', closeNav());
-contValue.addEventListener('click', closeNav());
+// // divValue.addEventListener('click', openNav());
+// portValue.addEventListener('click', closeNav());
+// abtValue.addEventListener('click', closeNav());
+// contValue.addEventListener('click', closeNav());
 
 function openNav() {
   document.getElementById('myNav').style.width = '100%';
@@ -19,14 +19,12 @@ function closeNav() {
 
 // Form Validation
 
-const submit = document.getElementById('footer-form');
-const emailInput = document.getElementById('email-detail');
-const invalidMessage = document.getElementById('invalid');
-
-submit.addEventListener('submit', (e) => {
-  if (emailInput.value !== emailInput.value.toLowerCase() && emailInput.value == emailInput.toUpperCase()) {
+const form = document.getElementById('footer-form');
+const email = document.getElementById('email-detail');
+const errorMessage = document.getElementById('invalid');
+form.addEventListener('submit', (e) => {
+  if (email.value.toLowerCase() !== email.value) {
     e.preventDefault();
-    alert("Please fill in the 'Your Name' box.");
-    invalidMessage.textContent = 'Please, use only lowercase letter for your email!';
+    errorMessage.textContent = 'Use only lowercase letters for your e-mail!';
   }
 });
