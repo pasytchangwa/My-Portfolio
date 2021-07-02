@@ -211,10 +211,10 @@ window.addEventListener('load', () => {
     const { name, email, message } = JSON.parse(
       localStorage.getItem('contactInfo')
     );
-    emailInput.value = email,
-    nameInput.value = name,
-    messageInput.value = message,
-  }
+    emailInput.value = email;
+    nameInput.value = name;
+    messageInput.value = message;
+}
 });
 inputsArray.forEach((input) => input.addEventListener('input', (e) => {
   if (input === nameInput) {
