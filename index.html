@@ -84,7 +84,7 @@
               <div class="card-body">
                 <h2 class="title title3">Tonic</h2>
                 <h2 class="titledisappear">Facebook 360</h2>
-                <ul class="info">
+                <ul class="info" id="info">
                   <li class="facebookdis">canopy</li>
                   <li class="facebook">facebook</li>
                   <li>
@@ -121,7 +121,7 @@
               <div class="card-body">
                 <h2 class="title title2 title4">multi-Post<br> stories</h2>
                 <h2 class="titledisappear">Uber navigation</h2>
-                <ul class="info">
+                <ul class="info" id="info">
                   <li class="uberdis">canopy</li>
                   <li class="uber">uber</li>
                   <li>
@@ -161,7 +161,7 @@
               </div>
               <div class="card-body">
                 <h2 class="title">tonic</h2>
-                <ul class="info">
+                <ul class="info" id="info">
                   <li>canopy</li>
                   <li>
                     <img src="./image/images-main/Counter.png" alt="counter" />
@@ -194,7 +194,7 @@
               </div>
               <div class="card-body">
                 <h2 class="title title2">multi-Post<br> stories</h2>
-                <ul class="info">
+                <ul class="info" id="info">
                   <li class="facebookdis">canopy</li>
                   <li class="facebook">facebook</li>
                   <li>
@@ -360,11 +360,11 @@
         <div class="footer-line"></div>
       </footer>
     </div>
-    <div class="section-img1"><img src="./image/images-head/snapshoot (1).png" alt="image1"></div>
-    <div class="section-img1"><img src="./image/images-head/snapshoot (2).png" alt="image2"></div>
-    <div class="section-img1"><img src="./image/images-head/snapshoot (3).png" alt="">imgage3</div>
-    <div class="section-img1"><img src="./image/images-head/snapshoot (4).png" alt="image4"></div>
-    <span class="modalgit">
+    <!-- <div class="section-img1 section-img"><img class= 'img1' src="./image/images-head/snapshoot (1).png" alt="image1"></div>
+    <div class="section-img1 section-img"><img class= 'img1' src="./image/images-head/snapshoot (2).png" alt="image2"></div>
+    <div class="section-img1 section-img"><img class= 'img1' src="./image/images-head/snapshoot (3).png" alt=""></div>
+    <div class="section-img1 section-img"><img class= 'img1' src="./image/images-head/snapshoot (4).png" alt="image4"></div>
+    <span class="modalgit"> -->
       <img src="./image/images-main/popupgithub.png" alt="popupgit" class="git">
     </span>
     <span class="modallive">
@@ -380,6 +380,40 @@
       </div>
       <div class="footer-line2"></div>
     </div>
+    <!--MODAL-->
+    <div class="modal" id="myModal" data-close-button="">
+      <div class="modal-content modal-card">
+        <div id="modal-header">
+          <h2 id="modal-title"></h2>
+          <span id="close">×</span>
+        </div>
+        <div class="infos">
+        </div>
+        <div class="section-img">
+          <img src="oo" alt="image1" class="img1">
+        </div>
+        <div class="modal-float2">
+          <p class="modal-desc"></p>
+          <div class="program-btn">
+          </div>
+          <div class="modal-float">
+            <div id="modal-foot">
+              <button type="button" class="btn4 btn">See live
+                <span class="modallive" style="display: block; margin-left: 5px;">
+                  <img src="./image/images-main/livesees.PNG" alt="popupgit" class="Live see" style="width: 25px; height: 25px;">
+                </span>
+              </button>
+              <button type="button" class="btn4 btn">See Source
+                <span class="modalgit" style="display: block; margin-left: 5px;">
+                  <img src="./image/images-main/popupgithub.png" alt="popupgit" class="git">
+                </span>
+              </button>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div id="modal-line"></div>
+  </div>
     <script src="./app.js">
     </script>
   </body>
