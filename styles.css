@@ -176,7 +176,7 @@ header {
 #myNav .footer-line2 {
   display: flex;
   align-self: flex-end;
-  margin-top: 95%;
+  margin-top: 100vh;
   justify-self: center;
   height: 5px;
   width: 134px;
