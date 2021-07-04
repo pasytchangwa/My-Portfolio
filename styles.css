@@ -102,6 +102,7 @@ header {
   padding: 8px;
   width: 40px;
   height: 40px;
+  animation: bounce 3s ease infinite;
 }
 
 @keyframes bounce {
@@ -110,7 +111,7 @@ header {
   }
 
   50% {
-    transform: scale(2);
+    transform: scale(1.5);
   }
 
   100% {
@@ -827,6 +828,7 @@ main {
 }
 
 /* The Modal (background) */
+
 .modal {
   display: none;
   position: fixed;
@@ -943,7 +945,7 @@ main {
 }
 
 /* The Close Button */
-.close {
+#close {
   display: flex;
   align-self: center;
   justify-self: center;
@@ -1005,12 +1007,8 @@ main {
   height: 5px;
   width: 134px;
   background-color: #0d151e;
-  margin-left: 150px;
+  margin-left: 110px;
   border-radius: 20px;
-}
-
-.section-img1 {
-  display: none;
 }
 
 @media screen and (min-width: 992px) {
@@ -1239,8 +1237,9 @@ main {
     width: 57px;
     height: 57px;
     position: relative;
-    left: 390px;
-    bottom: 40px;
+    left: 1000px;
+    bottom: 200px;
+    z-index: 50;
   }
 
   .hand-img {
@@ -1596,18 +1595,23 @@ main {
   }
 
   .modal {
-    padding: 25px 25px 55px 25px;
+    padding: 30px 45px 65px 45px;
     height: 100%;
   }
 
   .modal-content {
     padding: 20px;
-    width: 96%;
+    width: 100%;
   }
 
   .modal .modal-content .section-img {
-    width: 85%;
-    height: 25%;
+    width: 100%;
+    height: 10%;
+  }
+
+  .img1 {
+    width: 100%;
+    height: 100%;
   }
 
   .modal-float2 {
