@@ -242,7 +242,7 @@ header {
   color: #50505f79;
 }
 
-.social-icons li:hover {
+.social-icons li a:hover {
   transform: scale(1.2);
   transition: all, 0.7s, ease-in;
 }
